@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "f4",
+            "request": "launch",
+            "type": "cortex-debug",
+            "cwd": "${workspaceRoot}",
+            "servertype": "openocd",
+            "executable": "${config:binary}",
+            "configFiles": [
+                "${config:openocd_path}/scripts/interface/stlink.cfg",
+                "${config:openocd_path}/scripts/board/st_nucleo_f103rb.cfg"
+            ],
+            "showDevDebugOutput": "raw"
+        },
+    ],
+}
